@@ -1,3 +1,7 @@
+// ═══════════════════════════════════════════════════════════════════
+// ✅ Core Types
+// ═══════════════════════════════════════════════════════════════════
+
 export interface ShopInfo {
   tenant_id: number;
   tenant_name: string;
@@ -63,67 +67,90 @@ export interface Customer {
   tier?: string;
 }
 
-export interface ShopConfig {
-  basic: {
-    shop_name: string;
-    arabic_name?: string;
-    description?: string;
-    logo?: string;
-    cover?: string;
-    favicon?: string;
-    currency: string;
-    currency_symbol?: string;
-    language?: string;
-    timezone?: string;
-  };
-  contact: {
-    phone?: string;
-    email?: string;
-    whatsapp?: string;
-    address?: string;
-    social_links?: Record<string, string>;
-  };
-  theme: {
-    colors?: Record<string, string>;
-    fonts?: Record<string, string>;
-    layout?: Record<string, string>;
-    header?: any;
-    footer?: any;
-    custom_css?: string;
-    custom_js?: string;
-    system_pages?: Record<string, any>;
-  };
-  display: {
-    products_per_page: number;
-    show_out_of_stock: boolean;
-    show_product_rating: boolean;
-    show_wishlist: boolean;
-    enable_search: boolean;
-    enable_filters: boolean;
-  };
-  orders: {
-    min_order_amount: number;
-    allow_guest_checkout: boolean;
-    shipping_fees: number;
-    free_shipping_threshold: number;
-    cash_on_delivery: boolean;
-    online_payment: boolean;
-  };
-  customers: {
-    allow_registration: boolean;
-    enable_profiles: boolean;
-    require_phone_verification: boolean;
-    require_email_verification: boolean;
-  };
-  seo: {
-    title?: string;
-    description?: string;
-    keywords?: string;
-  };
-  pages: CustomPage[];
-  categories: any[];
-  homepage_layout: Block[];
+// ═══════════════════════════════════════════════════════════════════
+// ✅ ShopConfig — كل الحقول اختيارية
+// ═══════════════════════════════════════════════════════════════════
+
+export interface ShopBasicInfo {
+  shop_name?: string;
+  arabic_name?: string;
+  description?: string;
+  logo?: string;
+  cover?: string;
+  favicon?: string;
+  currency?: string;
+  currency_symbol?: string;
+  language?: string;
+  timezone?: string;
 }
+
+export interface ShopContactInfo {
+  phone?: string;
+  email?: string;
+  whatsapp?: string;
+  address?: string;
+  social_links?: Record<string, string>;
+}
+
+export interface ShopThemeConfig {
+  colors?: Record<string, string>;
+  fonts?: Record<string, string>;
+  layout?: Record<string, string>;
+  header?: Record<string, any>;
+  footer?: Record<string, any>;
+  custom_css?: string;
+  custom_js?: string;
+  system_pages?: Record<string, any>;
+}
+
+export interface ShopDisplayConfig {
+  products_per_page?: number;
+  show_out_of_stock?: boolean;
+  show_product_rating?: boolean;
+  show_wishlist?: boolean;
+  enable_search?: boolean;
+  enable_filters?: boolean;
+}
+
+export interface ShopOrdersConfig {
+  min_order_amount?: number;
+  allow_guest_checkout?: boolean;
+  shipping_fees?: number;
+  free_shipping_threshold?: number;
+  cash_on_delivery?: boolean;
+  online_payment?: boolean;
+}
+
+export interface ShopCustomersConfig {
+  allow_registration?: boolean;
+  enable_profiles?: boolean;
+  require_phone_verification?: boolean;
+  require_email_verification?: boolean;
+}
+
+export interface ShopSeoConfig {
+  title?: string;
+  description?: string;
+  keywords?: string;
+}
+
+// ⚠️ كل الحقول اختيارية — الـ API قد يرجع بعضها فقط
+export interface ShopConfig {
+  basic?: ShopBasicInfo;
+  contact?: ShopContactInfo;
+  theme?: ShopThemeConfig;
+  display?: ShopDisplayConfig;
+  orders?: ShopOrdersConfig;
+  customers?: ShopCustomersConfig;
+  seo?: ShopSeoConfig;
+  pages?: CustomPage[];
+  categories?: any[];
+  homepage_layout?: Block[];
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// ✅ Block / CustomPage / Order
+// ═══════════════════════════════════════════════════════════════════
 
 export interface Block {
   id: string;
