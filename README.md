@@ -1,32 +1,108 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+<img src="public/favicon.png" alt="Talvo Shop Logo" width="120" height="120" />
 
-Currently, two official plugins are available:
+# <img src="public/favicon.png" alt="Talvo Shop Logo" width="40" height="40" /> Talvo Shop
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**A Complete Multi-Tenant E-Commerce Platform**
 
-## React Compiler
+[![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-v3-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+</div>
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 📖 About
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+**Talvo Shop** is a modern **multi-tenant e-commerce platform** that empowers merchants to launch their own online stores in minutes — each with a unique design, custom branding, and full control over content.
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Built with performance, security, and scalability in mind.
+
+---
+
+## ✨ Features
+
+### 🛍️ For Shoppers
+- 🎨 Beautiful, responsive storefronts
+- 🔍 Advanced product search & filtering
+- 🛒 Smart shopping cart with persistent state
+- 💳 Secure checkout flow
+- 👤 Customer accounts with order history
+- 📦 Real-time order tracking
+- 📱 Fully mobile-optimized
+
+### 🎨 For Merchants
+- 🖌️ Fully customizable design (colors, fonts, layouts)
+- 🧩 Modular content builder (35+ block types)
+- 📄 Custom pages builder
+- 🔗 SEO-friendly custom URLs
+- 🌐 Multi-language ready
+- ⚡ Blazing fast performance
+
+### 🛡️ Security & Trust
+- 🔐 JWT-based authentication
+- 🏢 Multi-tenant data isolation
+- 🚨 Advanced error handling & monitoring
+- 🔒 HTTPS enforced in production
+
+---
+
+## 🛠️ Built With
+
+Modern, battle-tested technologies:
+
+- **React** — UI Framework
+- **TypeScript** — Type safety
+- **Vite** — Fast build tooling
+- **Tailwind CSS** — Utility-first styling
+- **React Router** — Client-side routing
+- **Zustand** — Lightweight state management
+
+---
+
+## 🌟 Why Talvo?
+
+| ⚡ Fast | 🔒 Secure | 🎨 Beautiful |
+|---|---|---|
+| Sub-second page loads | Industry-standard security | Modern, elegant design |
+| Optimized bundles | Encrypted data | Fully responsive |
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from the community!
+
+If you're interested in contributing, please:
+
+1. **Fork** the repository
+2. **Create a branch** for your feature
+3. **Submit a Pull Request**
+
+All contributions are reviewed before merging.
+
+---
+## 📄 License
+
+This project is licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
+
+---
+
+## 📞 Contact
+
+- 🐛 **Issues:** [GitHub Issues](https://github.com/talvoapp/soft/issues)
+- 💬 **Discussions:** [GitHub Discussions](https://github.com/talvoapp/soft/discussions)
+
+---
+
+<div align="center">
+
+**⭐ If you like this project, please give it a star!**
+
+Made with ❤️ by [Talvo Team](https://github.com/talvoapp)
+
+</div>
