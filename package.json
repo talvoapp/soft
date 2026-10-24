@@ -1,13 +1,23 @@
 {
-  "name": "soft",
+  "name": "talvo-shop",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "Talvo Shop — Multi-tenant e-commerce platform",
+  "author": "Mark EL-asfar <140356054+Mark-Lasfar@users.noreply.github.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/talvoapp/soft.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "preview": "vite preview",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "lint:fix": "oxlint --fix",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist node_modules/.vite"
   },
   "dependencies": {
     "axios": "^1.20.0",
